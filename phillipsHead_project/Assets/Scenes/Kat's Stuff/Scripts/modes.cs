@@ -1,18 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class modes : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public RawImage imageToToggle;
 
-    // Update is called once per frame
-    void Update()
+    // This method will be called when the toggle button is clicked
+    public void ToggleImageVisibility()
     {
-        
+        if (imageToToggle != null)
+        {
+            // Toggle the image's visibility
+            imageToToggle.enabled = !imageToToggle.enabled;
+        }
+        else
+        {
+            Debug.LogWarning("Image to toggle is not assigned!");
+        }
     }
 }
