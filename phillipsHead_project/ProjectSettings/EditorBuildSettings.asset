@@ -6,10 +6,10 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/finnMenuScene.unity
+    path: Assets/Scenes/finnScenes/finnMenuScene.unity
     guid: aca957d938c16436b8fc0d9aa083c74c
   - enabled: 1
-    path: Assets/Scenes/finnMainScene.unity
+    path: Assets/Scenes/finnScenes/finnMainScene.unity
     guid: b20ed9eb6d6024f4793681930029ce43
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
