@@ -7,11 +7,16 @@ public class Morbius : MonoBehaviour
 {
     public NPCConversation myConversation;
 
-    private void OnMouseDown()
+    void Start()
     {
-        if (Input.GetMouseButtonDown(0))
-        {
-            ConversationManager.Instance.StartConversation(myConversation);
-        }
+        StartCoroutine(MyCoroutine());
+    }
+
+    IEnumerator MyCoroutine ()
+    {
+        yield return new WaitForSeconds(3f);
+        ConversationManager.Instance.StartConversation(myConversation);
+        yield return new WaitForSeconds (3f);
+        ConversationManager.Instance.EndConversation();
     }
 }
